@@ -2,13 +2,16 @@
     <!--html-->
     <div class="app">
         <h1>hello!</h1>
+        <Person/>
     </div>
 </template>
 
 <script lang="ts">
     //js and ts
+    import Person from './components/Person.vue';
     export default{
-        name: 'App' //組件名
+        name: 'App', //組件名
+        components:{Person} //註冊組件
     }
 </script>
 
